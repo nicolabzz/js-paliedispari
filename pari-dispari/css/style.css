@@ -3,3 +3,17 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 50rem;
+    height: 100vh;
+    background-color: lightyellow;
+}
