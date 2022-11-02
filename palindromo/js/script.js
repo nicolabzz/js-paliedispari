@@ -17,15 +17,14 @@ function palindroma(testo) {
 
     console.log(`La parola e\' : ${testo}`);
 
-    for (let i = 0; i < testo; i++) {
-        testo.toLowerCase();
-    }
+    
+    testo = testo.toLowerCase();
 
-    pPalindroma = 1;
 
-    j = testo;
+    let pPalindroma = 1;
 
-    for (let i = 0, j = testo - 1; i < testo/2 && pPalindroma == 1; i++, j--) {
+
+    for (let i = 0, j = testo.length - 1; i < testo.length/2 && pPalindroma == 1; i++, j--) {
 
         if (testo[i] != testo[j])
         {
@@ -33,7 +32,7 @@ function palindroma(testo) {
         }
 
     }
-
+    
     if (pPalindroma == 1)
     {
         return true;
@@ -44,3 +43,38 @@ function palindroma(testo) {
     }
 
 };
+
+
+
+//------------------
+//HENRY's SOLUTIUON
+//------------------
+
+/*
+
+const word = prompt('Dammi una parola: ');
+
+if (isPalindrom())
+{
+    console.log('palindroma');
+}
+else
+{
+    console.log('non palindroma');
+}
+
+function isPalindrom(testWord) {
+    const invertWord = testWord.split('').reverse('').join('');
+
+    if (testWord === invertWord)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+
+}
+
+*/ 
