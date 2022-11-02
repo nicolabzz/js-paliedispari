@@ -5,10 +5,12 @@ const output = document.getElementById('output');
 if (palindroma(parola))
 {
     console.log('palindroma');
+    output.innerText = 'palindroma';
 }
 else
 {
     console.log('non palindroma');
+    output.innerText = 'non palindroma';
 }
 
 
